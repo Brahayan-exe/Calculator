@@ -2,6 +2,7 @@ const botones = document.querySelectorAll('.numero');
 const operacion = document.querySelectorAll('.operador');
 var valorActual = document.getElementById('valor-actual');
 var valorAnterior = document.getElementById('valor-anterior');
+const borrado = document.getElementsByClassName('delete')[0];
 var simbolo = document.getElementById('simbolo');
 const clear = document.querySelectorAll('.clear')[0];
 const igual = document.querySelectorAll('.igual')[0];
@@ -28,6 +29,11 @@ operacion.forEach(operador => {
 });
 
 
+borrado.addEventListener('click',() => {
+    opeActual = opeActual.slice(0,-1);
+    actualizarPantallaActual();
+    
+});
 
 igual.addEventListener('click',()=>{
   calcular();
@@ -118,7 +124,7 @@ function calcular () {
             
             return calculo;
     }
-calcular();
+
     
 
 
@@ -147,6 +153,3 @@ function limpiar (){
     resultado = undefined;
     op ='';
 };
-
-
-
