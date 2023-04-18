@@ -3,9 +3,13 @@
     
 }
 
+
 body {
     margin: 0;
+    background: linear-gradient(rgba(104, 111, 204, 0.644),rgba(115, 214, 245, 0.788));
+        
 }
+
 
 
 .container {
@@ -13,6 +17,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
+   
+    
 }
 
 .calculadora {
